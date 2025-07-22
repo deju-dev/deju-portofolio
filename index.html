@@ -585,7 +585,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Deju</h1>
-            <p class="subtitle">Developer<span class="typing-effect" id="typingText"></span></p>
+            <p class="subtitle">Developer & <span class="typing-effect" id="typingText"></span></p>
             <p class="description">13-year-old passionate coder</p>
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
@@ -598,8 +598,8 @@
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <h3>Age 11 - Pasting Journey Begins</h3>
-                    <p>Started My Coding Journey as looking for luas for applications and slightly or fully pasting then getting me more into learning how to code.</p>
+                    <h3>Age 11 - Coding Journey Begins</h3>
+                    <p>Started My Coding Journey as looking for luas for applications and slightly or fully pasting some functions then getting me more into learning how to code.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -722,7 +722,7 @@
 
     <script>
         // Typing Effect
-        const texts = ['Developer', 'Creator', 'Innovator', 'Designer'];
+        const texts = ['Creator', 'Innovator', 'Coder'];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -754,7 +754,7 @@
 
         // Animated Background
         function createFloatingCode() {
-            const codes = ['<html>', '</div>', 'function()', '{code}', 'var Deju', 'const app', 'if(true)', 'for(i=0)', 'Deju.dev', 'console.log', 'return true', 'async await', 'git push', 'npm install', 'purple++', '::before', 'transform()', 'gradient()'];
+            const codes = ['<html>', '</div>', 'function()', '{code}', 'var Deju', 'const app', 'if(true)', 'for(i=0)', 'Deju.dev', 'console.log', 'return true', 'async await', 'git push', 'npm install', 'purple++', '::before', 'transform()', 'gradient()', 'def calculate()', 'import numpy as np', 'for item in list:', 'if __name__ == "__main__":', 'try: except:', 'with open() as f:', 'lambda x: x**2', 'yield from', 'async def fetch()', '@property', 'class DataProcessor:', 'self.method()', 'return dict()', 'enumerate(items)', 'list.append()', 'str.format()', 'os.path.join()', 'json.dumps()', 'requests.get()', 'pandas.DataFrame()', 'matplotlib.pyplot', 'function createTable()', 'local variable = {}', 'for i=1,10 do', 'if condition then', 'end', 'table.insert()', 'string.match()', 'pairs(table)', 'ipairs(array)', 'require("module")', 'setmetatable()', '__index = {}', 'coroutine.create()', 'io.open()', 'math.random()', 'string.gsub()', 'table.concat()', 'print(result)', 'return nil', 'and or not', '<div class="container">', '<script src="">', '<link rel="stylesheet">', '<meta charset="utf-8">', '<form action="">', '<input type="text">', '<button onclick="">', 'document.getElementById()', '.container { width: 100% }', ':hover { color: red }', '@media (max-width: 768px)', 'display: flex;', 'position: absolute;', 'z-index: 999;', 'box-shadow: 0 2px 4px', 'border-radius: 8px', 'transition: all 0.3s', 'animation: fadeIn 2s', 'grid-template-columns:', 'calc(100% - 20px)', 'int main() { return 0; }', '#include <iostream>', 'std::cout << "Hello"', 'std::vector<int> vec', 'for(auto& item : vec)', 'class MyClass {}', 'public: private:', 'virtual void method()', 'template<typename T>', 'namespace MyNamespace', 'try { } catch(...)', 'unique_ptr<int>', 'shared_ptr<Data>', 'std::thread worker', 'mutex.lock()', 'const int& ref', 'static_cast<int>()', 'sizeof(variable)', 'new delete', 'operator++()', 'public static void Main()', 'using System;', 'namespace MyApp', 'class Program {}', 'public int Property { get; set; }', 'private readonly string', 'async Task<string>', 'await method()', 'try { } catch (Exception ex)', 'foreach(var item in list)', 'List<string> items', 'Dictionary<int, string>', 'LINQ.Where(x => x > 5)', 'string.IsNullOrEmpty()', 'Console.WriteLine()', 'Task.Run(() => {})', 'lock(syncObject)', 'using(var resource = new)', 'abstract class Base', 'interface IRepository', 'const myFunction = () => {}', 'let variable = null', 'function declaration()', 'document.querySelector()', 'addEventListener("click")', 'fetch("/api/data")', '.then(response => {})', 'Promise.all([...])', 'async function load()', 'try { } catch (error)', 'JSON.parse(data)', 'localStorage.setItem()', 'setTimeout(() => {}, 1000)', 'Array.map(item => {})', 'Object.keys(obj)', 'Math.floor(Math.random())', 'new Date().getTime()', 'RegExp.test(string)', 'import { module } from', 'export default class', 'while(condition) { break; }', 'switch(value) { case 1: }', '#define MACRO_NAME', 'typedef struct {}', 'enum Status { ACTIVE }', 'union DataType {}', 'goto label;', 'inline function()', 'volatile int counter', 'extern "C" {}', '#pragma once', 'assert(condition)', 'static const int', 'register int fast', 'auto variable = value', 'decltype(expression)', 'constexpr int SIZE', 'noexcept specification', 'override virtual', 'final class', 'nullptr assignment', 'React.useState()', 'Vue.createApp()', 'Angular @Component', 'Flask.route("/")', 'Django.models.Model', 'Express.get("/api")', 'jQuery.ajax({})', 'Bootstrap.modal()', 'Tailwind.container', 'SCSS.@mixin()', 'Less.@import', 'Webpack.config.js', 'Babel.transform()', 'TypeScript.interface', 'GraphQL.query', 'MongoDB.find({})', 'MySQL.SELECT * FROM', 'Redis.set(key, value)', 'Docker.FROM ubuntu', 'Git.commit -m ""'];
             const bgAnimation = document.getElementById('bgAnimation');
             
             setInterval(() => {
